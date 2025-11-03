@@ -1,0 +1,24 @@
+### Local test - Root route
+GET http://localhost:8080/
+
+### Local test - All contacts
+GET http://localhost:8080/contacts
+
+### Local test - One contact
+GET http://localhost:8080/contacts/6906df468c0abc46e3e19583
+
+### Local test - Professional route
+GET http://localhost:8080/professional
+
+
+### Render test - Root route
+GET https://cse-341-w01-contacts.onrender.com/
+
+### Render test - All contacts
+GET https://cse-341-w01-contacts.onrender.com/contacts
+
+### Render test - One contact
+GET https://cse-341-w01-contacts.onrender.com/contacts/6906df468c0abc46e3e19583
+
+### Render test - Professional route
+GET https://cse-341-w01-contacts.onrender.com/professional
