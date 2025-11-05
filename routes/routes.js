@@ -16,7 +16,6 @@ router.get('/professional', (req, res) => {
 });
 
 // --- GET ALL contacts ---
-// If a query id is present, let the next route (GET ONE) handle it
 router.get('/contacts', async (req, res, next) => {
   try {
     if (req.query.id) return next(); // forward to GET ONE handler below
@@ -28,7 +27,6 @@ router.get('/contacts', async (req, res, next) => {
 });
 
 // --- GET ONE contact ---
-// Supports BOTH: /contacts/:id  and  /contacts?id=<id>
 router.get(['/contacts/:id', '/contacts'], async (req, res, next) => {
   try {
     const id = req.params.id || req.query.id;
@@ -46,5 +44,10 @@ router.get(['/contacts/:id', '/contacts'], async (req, res, next) => {
     next(err);
   }
 });
+
+// --- TEMPLES API ---
+// Mount a separate router for temple endpoints
+const templeRouter = require('./temple');
+router.use('/temples', templeRouter);
 
 module.exports = router;

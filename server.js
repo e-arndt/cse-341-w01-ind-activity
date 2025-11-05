@@ -7,6 +7,9 @@ const routes = require('./routes/routes');
 const app = express();
 const port = process.env.PORT || 8080;
 
+const swaggerUi = require('swagger-ui-express');
+const swaggerDoc = require('./swagger.json');
+
 // Middleware
 app
   .use(express.json())
@@ -19,10 +22,14 @@ app
     next();
   });
 
+  app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDoc));
+
+  
 // Routes
 app
   .use('/', routes)
   .get('/', (req, res) => res.send('Server is up'));
+  
 
 // Main error handler
 app.use((err, req, res, next) => {

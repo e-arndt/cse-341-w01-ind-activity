@@ -1,0 +1,58 @@
+[
+  {
+    "temple_id": 1,
+    "name": "Adelaide Australia Temple",
+    "location": "Marden, South Australia, Australia",
+    "dedicated": "June 15, 2000",
+    "additionalInfo": false
+  },
+  {
+    "temple_id": 2,
+    "name": "Helsinki Finland Temple",
+    "location": "Espoo, Uusimaa, Finland",
+    "dedicated": "October 22, 2006",
+    "additionalInfo": false
+  },
+  {
+    "temple_id": 3,
+    "name": "Johannesburg South Africa Temple",
+    "location": "Johannesburg, Gauteng, South Africa",
+    "dedicated": "August 24, 1985",
+    "additionalInfo": false
+  },
+  {
+    "temple_id": 4,
+    "name": "Laie Hawaii Temple",
+    "location": "Laie, Hawaii, United States",
+    "dedicated": "November 27, 1919",
+    "additionalInfo": false
+  },
+  {
+    "temple_id": 5,
+    "name": "Paris France Temple",
+    "location": "Le Chesnay, France",
+    "dedicated": "May 21, 2017",
+    "additionalInfo": false
+  },
+  {
+    "temple_id": 6,
+    "name": "Rome Italy Temple",
+    "location": "Rome, Roma, Italy",
+    "dedicated": "March 10, 2019",
+    "additionalInfo": false
+  },
+  {
+    "temple_id": 7,
+    "name": "Tegucigalpa Honduras Temple",
+    "location": "Comayagüela, Francisco Morazán, Honduras",
+    "dedicated": "March 17, 2013",
+    "additionalInfo": false
+  },
+  {
+    "temple_id": 8,
+    "name": "Vancouver British Columbia Temple",
+    "location": "Langley, British Columbia, Canada",
+    "dedicated": "May 2, 2010",
+    "additionalInfo": false
+  }
+]
